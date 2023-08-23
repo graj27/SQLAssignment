@@ -1,7 +1,14 @@
+-- This file contains the create table statements for the table SupplierTbl, OrderTbl and OrderLineTbl
+-- SupplierTbl contains details for the suppliers
+-- OrderTbl contains details for the orders
+-- OrderLineTbl contains details for each invoice
+
+--set serveroutput on;
+
 CREATE SEQUENCE SupplierID_Seq START WITH 1 INCREMENT BY 1;
 
 -- Create Supplier Table
-CREATE TABLE Supplier (
+CREATE TABLE SupplierTbl (
     SupplierID NUMBER DEFAULT SupplierID_Seq.NEXTVAL PRIMARY KEY,
     SupplierName VARCHAR2(50),
     SupplierContactName VARCHAR2(50),
@@ -12,18 +19,18 @@ CREATE TABLE Supplier (
 );
 
 -- Create Order Table
-CREATE TABLE OrderTable (
+CREATE TABLE OrderTbl(
     OrderReference VARCHAR2(100) PRIMARY KEY,
     SupplierID NUMBER,
     OrderDate DATE,
     OrderTotalAmount NUMBER(18, 2),
     OrderDescription VARCHAR2(500),
     OrderStatus VARCHAR2(50),
-    FOREIGN KEY (SupplierID) REFERENCES Supplier(SupplierID)
+    FOREIGN KEY (SupplierID) REFERENCES SupplierTbl(SupplierID)
 );
 
 -- Create OrderLine Table
-CREATE TABLE OrderLine (
+CREATE TABLE OrderLineTbl (
     InvoiceReference VARCHAR2(100),
     OrderReference VARCHAR2(100),
     OrderLineAmount NUMBER(18, 2),
@@ -33,13 +40,22 @@ CREATE TABLE OrderLine (
     InvoiceHoldReason VARCHAR2(500),
     InvoiceStatus VARCHAR2(50),
     PRIMARY KEY (InvoiceReference,OrderReference,OrderLineAmount,InvoiceDate),
-    FOREIGN KEY (OrderReference) REFERENCES OrderTable(OrderReference)
+    FOREIGN KEY (OrderReference) REFERENCES OrderTbl(OrderReference)
 );
 
-DROP TABLE OrderLine;
 
-DROP TABLE OrderTable;
 
-DROP TABLE Supplier;
+-----------------------------------------------------------------------------------
 
-DROP SEQUENCE SupplierID_Seq;
+
+--Sequence SUPPLIERID_SEQ created.
+--
+--
+--Table SUPPLIERTBL created.
+--
+--
+--Table ORDERTBL created.
+--
+--
+--Table ORDERLINETBL created.
+
