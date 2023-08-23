@@ -1,6 +1,3 @@
-
-set serveroutput on;
-
 CREATE SEQUENCE SupplierID_Seq START WITH 1 INCREMENT BY 1;
 
 -- Create Supplier Table
@@ -39,8 +36,6 @@ CREATE TABLE OrderLine (
     FOREIGN KEY (OrderReference) REFERENCES OrderTable(OrderReference)
 );
 
-
-
 DROP TABLE OrderLine;
 
 DROP TABLE OrderTable;
@@ -48,60 +43,3 @@ DROP TABLE OrderTable;
 DROP TABLE Supplier;
 
 DROP SEQUENCE SupplierID_Seq;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- Create InvoiceHoldReasons Table
-CREATE TABLE InvoiceHoldReasons (
-    InvoiceReference VARCHAR2(100) PRIMARY KEY,
-    InvoiceHoldReason VARCHAR2(500),
-    FOREIGN KEY (InvoiceReference) REFERENCES OrderLine(InvoiceReference)
-);
-
-
-
-
-
-
-
-
--- Create InvoiceHoldReasons Table
-CREATE TABLE InvoiceHoldReasons (
-    InvoiceReference VARCHAR2(100),
-    InvoiceHoldReason VARCHAR2(500),
-    PRIMARY KEY(InvoiceReference),
-    FOREIGN KEY (InvoiceReference) REFERENCES OrderLine(InvoiceReference)
-);
-
-CREATE TABLE InvoiceHoldReason (
-    InvoiceReference  VARCHAR2(100) PRIMARY KEY,
-    InvoiceHoldReasons VARCHAR2(100),
-    CONSTRAINT fk_InvoiceHoldReason_Invoice
-        FOREIGN KEY (InvoiceReference)
-        REFERENCES OrderLine (InvoiceReference)
-);
-
-
-
---DROP TABLE InvoiceHoldReasons;
-
-CREATE TABLE Employee(
-p_employee_id NUMBER(18, 2),
-p_employee_name VARCHAR2(100));
