@@ -1,3 +1,6 @@
+-- This stored procedure returns all suppliers with their respective number of orders and total amount ordered from them 
+-- between the period of 01 January 2022 and 31 August 2022
+
 CREATE OR REPLACE PROCEDURE GetSupplierOrderSummary
 IS
 BEGIN
@@ -34,9 +37,6 @@ BEGIN
     GetSupplierOrderSummary;
 END;
 /
-
-
---set serveroutput on;
 
 --------------------------------------------------------------------------------------------------
 --Supplier Name	Supplier Contact Name	Supplier Contact No. 1	Supplier Contact No. 2	Total Orders	Order Total Amount
