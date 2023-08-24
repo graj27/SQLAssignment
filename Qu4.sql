@@ -1,3 +1,7 @@
+-- This stored procedure generates a report displaying a summary of Orders 
+-- with the corresponding list of distinct invoices and their total amount ordered by Order Date in Descending order.
+
+
 CREATE OR REPLACE PROCEDURE GetReport
 AS
 BEGIN
