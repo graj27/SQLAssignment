@@ -39,15 +39,15 @@ END;
 /
 
 --------------------------------------------------------------------------------------------------
---Supplier Name	Supplier Contact Name	Supplier Contact No. 1	Supplier Contact No. 2	Total Orders	Order Total Amount
---PEGASUS LTD		Georges Neeroo			5741254S		4615841		2		275000
---MOTTOWAY CORP.		Stevens Seernah			57942513				2		6569625
---DIGISAY CO. LTD.		Berry Parker			6028010		57841266		1		57300
---LAMBONI STAT INC.		Frederic Pey			52557435				2		50000
---EMTELLO LTD		Megan Hembly			57841698		2420641		1		21000
---STUFFIE STATIONERY		Zenhir Belall			6547416				1		250000
---SAFEDEST TAXI SERVICES		Steeve Narsimullu			2174512		58741002		1		26700
---JINFIX COMPUTERS		Jordan Liu Min			2195412		58412556		1		85200
---FIRELAND BROS.		Amelia Bridney			59480015				1		36800
---FOXY ELECTRONICS		Reddy Floyd			52845412				1		182700
+--Supplier Name	        Supplier Contact Name	  Supplier Contact No. 1	  Supplier Contact No. 2	  Total Orders	  Order Total Amount
+--PEGASUS LTD		            Georges Neeroo			5741254S		                4615841		                      2		    275000
+--MOTTOWAY CORP.		        Stevens Seernah			57942513		                	                            	2		    6569625
+--DIGISAY CO. LTD.		      Berry Parker			  6028010		                  57841266	                      1		    57300
+--LAMBONI STAT INC.		      Frederic Pey			  52557435	                  			                          2		    50000
+--EMTELLO LTD		            Megan Hembly		  	57841698	                	2420641		                      1		    21000
+--STUFFIE STATIONERY		    Zenhir Belall			  6547416			                        	                      1		    250000
+--SAFEDEST TAXI SERVICES		Steeve Narsimullu		2174512	                	  58741002		                    1		    26700
+--JINFIX COMPUTERS		      Jordan Liu Min			2195412		                  58412556		                    1		    85200
+--FIRELAND BROS.		        Amelia Bridney			59480015	                        			                    1		    36800
+--FOXY ELECTRONICS		        Reddy Floyd			  52845412		                		                            1		    182700
 
