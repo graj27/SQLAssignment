@@ -1,3 +1,6 @@
+-- This stored procedure will return details for the second highest Order Total Amount using data from the tables SupplierTbl, OrderTbl and OrderlineTbl.
+
+
 CREATE OR REPLACE PROCEDURE GetReportSecondHighestTotalAmt AS
 BEGIN
     DBMS_OUTPUT.PUT_LINE('Order Reference ' || 'Order Date ' || 'Order Total Amount ' || 'Order Status ' || 'Invoice References '|| 'Supplier Name ');
