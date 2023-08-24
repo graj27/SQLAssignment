@@ -60,6 +60,6 @@ END;
 ---------------------------------------------------------------------------------
 
 --
---Order Reference Order Date Order Total Amount Order Status Invoice References Supplier Name 
---2			January   10, 2022		750000				Open		INV_PO002.1| INV_PO002.2| INV_PO002.3		MOTTOWAY CORP.
+--Order Reference     Order Date Order     Total Amount     Order Status     Invoice References                         Supplier Name 
+--2			          January   10, 2022	750000				Open		INV_PO002.1| INV_PO002.2| INV_PO002.3		MOTTOWAY CORP.
 
